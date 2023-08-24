@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF4E6399-CEBA-B7E9-0E79-B18FF552278B" name="Lecturer">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:05:50 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Lect_ID" id="C9894E5E-DE33-67FC-CE87-C94884D4B9AA">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:05:58 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FName" id="989DED17-F403-7260-F200-351CE9112E7A">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:14:20 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LName" id="83DA3AD7-831F-4CB1-5E6D-817146DBC386">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:14:53 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Lect_ID1" id="536E96FE-AEBC-0390-BCD1-1F4D0823DEC3">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:18:19 UTC</createdTime>
+<generatorID>30C87C55-13E2-D22F-A92B-4B530FB29919</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<referedAttribute>C9894E5E-DE33-67FC-CE87-C94884D4B9AA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92EA7710-2001-4C7F-823F-3644EB3DC40B" name="Lecturer PK">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:10:57 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C9894E5E-DE33-67FC-CE87-C94884D4B9AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

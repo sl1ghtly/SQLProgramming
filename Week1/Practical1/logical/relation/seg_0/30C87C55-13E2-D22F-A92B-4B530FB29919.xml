@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="department has lecturers" directorySegmentName="seg_0" id="30C87C55-13E2-D22F-A92B-4B530FB29919">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:17:42 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<sourcePk>92EA7710-2001-4C7F-823F-3644EB3DC40B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BE92EF2E-DFF1-EC77-88EF-8E676A39BC5C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BF4E6399-CEBA-B7E9-0E79-B18FF552278B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

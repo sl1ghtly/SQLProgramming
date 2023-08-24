@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="44847A73-D192-5BDB-8543-9DD4B12EE606" name="Student_Module">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:24:55 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Grade" id="2F05FA9E-EEA6-562D-5E0C-B68303B977A1">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:25:13 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Module_ID" id="E2E377FC-2C94-14FB-EB66-7B617BB74455">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:25:50 UTC</createdTime>
+<generatorID>31F7DCD3-6EAD-B831-6A25-A1861BDDABB9</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<referedAttribute>687B40AB-2AE7-8C3F-2C14-F34A0E017008</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Student_ID" id="C0444D7A-5EA2-4183-64C8-1773DB91388C">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:29:05 UTC</createdTime>
+<generatorID>86FC82D9-2A9C-533F-3C24-B33C63D63FC6</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<referedAttribute>B916D385-0058-F481-737D-66C63983C405</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C953B093-3F29-DDBE-8986-A1BAFE23939D" name="Student_Module PK">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:25:50 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E2E377FC-2C94-14FB-EB66-7B617BB74455</attributeRef>
+<attributeRef>C0444D7A-5EA2-4183-64C8-1773DB91388C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

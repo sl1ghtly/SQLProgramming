@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E08C5BD-3A85-8010-12A9-4EA7E28A279F" name="Lecturer">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:32:51 UTC</createdTime>
+<generatorID>BF4E6399-CEBA-B7E9-0E79-B18FF552278B</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Lect_ID" id="0878107F-D652-222A-0DC5-1CAA74590ECA">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:32:51 UTC</createdTime>
+<generatorID>C9894E5E-DE33-67FC-CE87-C94884D4B9AA</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FName" id="48961436-D74F-C0E8-CE41-03DF847795CC">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:32:51 UTC</createdTime>
+<generatorID>989DED17-F403-7260-F200-351CE9112E7A</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LName" id="F5C08B46-7616-72A5-2598-1AD21870AFC4">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:32:51 UTC</createdTime>
+<generatorID>83DA3AD7-831F-4CB1-5E6D-817146DBC386</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lect_ID1" id="17446512-0D48-EE6D-6467-13B3B4165CD4">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:32:51 UTC</createdTime>
+<generatorID>536E96FE-AEBC-0390-BCD1-1F4D0823DEC3</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Department_Dept_ID" id="5804DDAC-E0F1-2384-5740-984BD350849E">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:33:37 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="331EC6BA-BC68-F0D5-0A73-7EEF2BB2F894" referredColumn="D0BF146A-22C6-2795-0334-9DF63705698E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FFCCB6BE-E699-264E-D36B-B9FCBF2D763B" name="Lecturer_PK">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:32:51 UTC</createdTime>
+<generatorID>92EA7710-2001-4C7F-823F-3644EB3DC40B</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0878107F-D652-222A-0DC5-1CAA74590ECA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57750D1F-42B2-D5E8-8549-00C99C790C9F" name="Lecturer_Department_FK">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:32:51 UTC</createdTime>
+<generatorID>30C87C55-13E2-D22F-A92B-4B530FB29919</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5804DDAC-E0F1-2384-5740-984BD350849E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BE92EF2E-DFF1-EC77-88EF-8E676A39BC5C" name="Department">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:09:31 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Dept_ID" id="C78CDFB4-7C9C-3512-1BCC-7463972227F2">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:10:00 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Lect_ID" id="CF605556-8A2F-73D7-C352-6E7B38A5BCE3">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:17:42 UTC</createdTime>
+<generatorID>30C87C55-13E2-D22F-A92B-4B530FB29919</generatorID>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<referedAttribute>C9894E5E-DE33-67FC-CE87-C94884D4B9AA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A62A0099-F016-3391-2E30-8D448FD34221" name="Department PK">
+<createdBy>L00157413</createdBy>
+<createdTime>2022-02-08 16:11:02 UTC</createdTime>
+<ownerDesignName>Practical1</ownerDesignName>
+<engineerTo>
+<item key="E6E977BE-C57E-196D-F0D5-3F9DDB82490A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C78CDFB4-7C9C-3512-1BCC-7463972227F2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

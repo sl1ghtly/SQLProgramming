@@ -1,0 +1,107 @@
+SQL> test
+SP2-0042: unknown command "test" - rest of line ignored.
+SQL> SELECT count(*)
+  2  FROM all_tables;
+
+  COUNT(*)                                                                      
+----------                                                                      
+      2133                                                                      
+
+SQL> SHO con_name;
+
+CON_NAME                                                                        
+------------------------------                                                  
+CDB$ROOT                                                                        
+SQL> COLUMN name FORMAT a15
+SQL> SELECT name, con_id
+  2  FROM v$containers
+  3  ORDER BY con_id;
+
+NAME                CON_ID                                                      
+--------------- ----------                                                      
+CDB$ROOT                 1                                                      
+PDB$SEED                 2                                                      
+XEPDB1                   3                                                      
+
+SQL> SELECT name, con_id, con_uid
+  2  FROM v$pdbs
+  3  ORDER by con_id;
+
+NAME                CON_ID    CON_UID                                           
+--------------- ---------- ----------                                           
+PDB$SEED                 2  907347477                                           
+XEPDB1                   3 3974206666                                           
+
+SQL> COLUMN pdb_name FORMAT a15
+SQL> SELECT pdb_id, pdb_name
+  2  FROM dba_pdbs
+  3  ORDER BY pdb_id;
+
+    PDB_ID PDB_NAME                                                             
+---------- ---------------                                                      
+         2 PDB$SEED                                                             
+         3 XEPDB1                                                               
+
+SQL> SET LINESIZE 50
+SQL> SET WRAP OFF
+SQL> SELECT pdb_id, pdb_name
+  2  FROM dba_pdbs
+  3  ORDER BY pdb_id;
+
+    PDB_ID PDB_NAME                               
+---------- ---------------                        
+         2 PDB$SEED                               
+         3 XEPDB1                                 
+
+SQL> ALTER SESSION SET CONTAINER = XEPDB1
+  2  
+SQL> ALTER SESSION SET CONTAINER = XEPDB1;
+
+Session altered.
+
+SQL> SHO con_name
+
+CON_NAME                                          
+------------------------------                    
+XEPDB1                                            
+SQL> CREATE USER test
+  2  IDENTIFIED BY test
+  3  PASSWORD EXPIRE
+  4  DEFAULT TABLESPACE USERS
+  5  QUOTA 10M ON USERS;
+
+User created.
+
+SQL> GRANT create session TO test;
+
+Grant succeeded.
+
+SQL> GRANT RESOURCE TO test;
+
+Grant succeeded.
+
+SQL> DROP USER test CASCADE;
+
+User dropped.
+
+SQL> CREATE USER company
+  2  IDENTIFIED BY test
+  3  PASSWORD EXPIRE
+  4  DEFAULT TABLESPACE USERS
+  5  QUOTA 10M ON USERS;
+
+User created.
+
+SQL> GRANT create session TO company;
+
+Grant succeeded.
+
+SQL> GRANT RESOURCE TO company;
+
+Grant succeeded.
+
+SQL> DROP USER company CASCADE;
+
+User dropped.
+
+SQL> spool off
